@@ -30,7 +30,7 @@ for (let i = 0; i < areas.length; i++) {
         }
     });
     areas[i].addEventListener('mouseout', function() {
-        tacoImage.src = 'img/taco_bw_600.png';
+        tacoImage.src = 'img/taco_bw_350x290.png';
 
         // Hide info divs
         infoShell.style.display = 'none';
