@@ -1,183 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Rush Programming</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">        <link href="css/custom.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-            <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">
-                  <img class="img img-fluid" src="img/r_symbol_logo.png" alt="Daniel Rush Logo" width="35" height="35">
-                  Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Demo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Header-->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <title>Rush Programming</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bg-dark fixed-top">
+        <div class="container px-4">
+        <a class="navbar-brand" href="#">
+            <img class="img img-fluid" src="img/r_symbol_logo.png" alt="Daniel Rush Logo" width="35" height="35">
+            Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#section-1">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-2">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-3">Docs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+              <!-- Header-->
         <header class="bg-primary bg-gradient text-white">
             <div class="container px-4 text-center">
                 <img class="img img-fluid" src="img/r_symbol_logo.png" alt="Daniel Rush Logo" width="400" height="400">
                 <br>
-                <h1 class="fw-bolder">Rush Programming</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Web3 Game Development / Audio Programming / UE5, Unreal, Wwise</p>
+                <h1 class="fw-bolder">Daniel Rush</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Web3 Development / Audio Programming / UE5 & Unity</p>
                 <p></p>
-                <a class="btn btn-lg btn-light" href="#about">Find out more</a>
+                <a class="btn btn-lg btn-light" href="#section-1">Find out more</a>
             </div>
         </header>
-<!-- About section-->
-<section id="about">
-  <div class="container px-4">
-    <div class="row gx-4">
-      <div class="col-md-12 text-center">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/nftropolis_soft_edges.png" style="width:100%;" alt="...">
-              <div class="carousel-caption d-none d-md-block text-center">
-                <h5>NFTropolis, a unique virtual world with emotional speech synthesis triggered by NFTs, providing captivating and immersive experience.</h5>
-                <p>&nbsp;</p>
-                <a class="btn btn-lg btn-light" href="#about">Take me to NFTropolis</a>
+    <!-- Section 1 -->
+    <section class="text-center" id="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img id="taco-image" class="taco" src="img/taco_bw_600.png" usemap="#image-map">
+
+                    <map name="image-map">
+                        <area class="taco-shell" data-src="img/taco_shell_600.png" coords="30,452,49,358,88,272,130,222,184,186,245,165,292,157,357,161,393,174,425,189,454,213,486,244,513,284,527,318,538,346,550,382,554,423,552,443,540,455,511,463,228,448" shape="poly">
+                        <area class="taco-meat-1" data-src="img/taco_meat_600.png" coords="27,446,14,427,12,417,18,413,10,399,18,388,7,373,15,367,17,354,31,341,27,324,40,316,23,296,28,284,29,263,40,255,42,235,60,224,76,211,84,216,88,236,92,259,57,333" shape="poly">
+                        <area class="taco-meat-2" data-src="img/taco_meat_600.png" coords="225,143,230,132,246,128,259,129,273,121,279,122,288,107,307,101,315,106,325,99,339,99,349,106,368,106,376,112,393,121,399,132,410,138,415,145,426,147,432,158,442,165,437,177,444,180,457,177,466,185,479,188,484,202,496,204,499,217,510,221,513,228,522,239,522,247,527,252,520,265,531,275,542,278,529,293,539,294,543,304,525,307,502,267,481,235,439,200,387,169,330,157,284,159,251,163" shape="poly">
+                        <area class="taco-meat-3" data-src="img/taco_meat_600.png" coords="543,352,552,338,560,345,546,363,550,379,567,374,582,360,599,367,591,385,597,396,588,409,589,426,580,438,577,454,560,459,548,454,556,425,555,401,551,384" shape="poly">
+                        <area class="taco-salad" data-src="img/taco_salad_600.png"coords="15,354,3,317,3,269,14,224,32,192,53,174,85,159,110,150,122,154,132,137,154,121,189,103,225,94,256,92,292,89,311,98,352,82,389,81,425,93,447,120,460,138,475,155,483,170,502,174,522,187,543,205,557,229,564,254,563,263,579,278,591,307,594,333,586,361,555,383,529,324,524,312,543,308,541,298,531,296,544,282,522,267,530,253,521,237,511,223,505,217,498,206,489,202,479,186,468,183,459,177,444,175,444,166,433,156,425,147,404,132,392,120,381,118,372,108,352,104,336,97,317,104,299,102,285,113,278,122,260,126,239,128,228,137,224,146,234,148,243,157,245,163,228,168,212,174,177,188,143,207,119,234,94,259,86,219,76,210,62,222,44,231,41,253,28,260,26,278,23,290,35,313,26,322,31,341" shape="poly">
+                    </map>
+                </div>
+                <div class="col-6 justify-content-center text-center">
+                    <p>&nbsp;</p>
+                    <p class="lead fw-normal text-white-50 mb-0">"Apps & games are like tacos, they should be stuffed full of delicious features"<br>- Founder of the internet</p>
+                    <p>&nbsp;</p>
+                    <p class="lead fw-normal text-white-50 mb-0"><b>Hover over the taco to reveal skills</b></p>
+                    <p>&nbsp;</p>
+                    <div class="info" id="info-shell">
+                        Front end development:<br>
+                        <p></p>
+                        <div class="row justify-content-center">
+                            <div class="col-2 info-col">
+                                <img src="img/html5ico.png" style="width:35px;padding:3px" c class="img-fluid" alt="HTML5"><br>
+                                HTML5
+                            </div>
+                            
+                            <div class="col-2 info-col">
+                                <img src="img/cssico.png" style="width:35px;" class="img-fluid" alt="CSS3"><br>
+                                 CSS
+                            </div>
+
+                            <div class="col-2 info-col">
+                                <img src="img/jsico.png" style="width:35px;" class="img-fluid" alt="JavaScript"><br>
+                                JavaScript
+                            </div>
+                            
+                            <div class="col-2 info-col">
+                                <img src="img/reactico.png" style="width:35px;" class="img-fluid" alt="React"><br>
+                                React
+                            </div>
+                            <div class="col-2 info-col">
+                                <img src="img/reduxico.png" style="width:35px;" class="img-fluid" alt="Next.js"><br>
+                                Redux
+                            </div>
+                            <div class="col-2 info-col">
+                                <img src="img/jqueryico.png" style="width:35px;" class="img-fluid" alt="jQuery"><br>
+                                jQuery
+                                </div>
+                        </div>
+                    </div> 
+                    <div class="info info-meat" style="display:none;">
+                        Game development & pro audio:<br>
+                        <p></p>
+                        <div class="row justify-content-center">
+                            <div class="col-2 info-col">
+                                <img src="img/unityico.png" style="width:35px;" class="img-fluid" alt="Unity"><br>
+                                Unity
+                            </div>
+                            <div class="col-2 info-col">
+                                <img src="img/csharpico.png" style="width:35px;" class="img-fluid" alt="C#"><br>
+                                C#
+                            </div>
+                            <div class="col-2 info-col">
+                                <img src="img/ue5ico.png" style="width:35px;" class="img-fluid" alt="3D"><br>
+                                UE5
+                            </div>
+                            <div class="col-2 info-col">
+                                <img src="img/cppico.png" style="width:35px;" class="img-fluid" alt="3D"><br>
+                                C++
+                            </div>
+                            <div class="col-2 info-col">
+                                <img src="img/wwiseico.png" style="width:35px;" class="img-fluid" alt="3D"><br>
+                                Wwise
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="info" id="info-salad">
+                        Back end development:<br>
+                        <p></p>
+                        <div class="row justify-content-center">
+                            <div class="col-2 info-col">
+                                <img src="img/nodeico.png" style="width:35px;" class="img-fluid" alt="Node.js"><br>
+                                Node.js
+                            </div>
+                            <div class="col-2 info-col">
+                                <img src="img/npmico.png" style="width:35px;" class="img-fluid" alt="NPM"><br>
+                                NPM
+                            </div>
+                            <div class="col-2 info-col">
+                                <img src="img/exico.png" style="width:35px;" class="img-fluid" alt="Express"><br>
+                                Express
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="text-center bg-light" id="section-2">
+
+    </section>
+
+       <!-- Section 3-->
+       <section id="section-3">
+        <div class="container px-4">
+          <div class="row gx-4 justify-content-center">
+            <div class="col-md-5 text-center">
+              <div class="row mb-4">
+                <div class="col-6 text-center">
+                  <img src="img/blockchain_icon.png" class="img-fluid" style="width: 50%;" alt="Blockchain">
+                </div>
+                <div class="col-6">
+                  <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
+                    Need help connecting your website to a blockchain-based platform?
+                  </p>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-6 text-center">
+                  <img src="img/mic_icon.png" class="img-fluid" style="width: 50%;" alt="Audio">
+                </div>
+                <div class="col-6">
+                  <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
+                    Need help implementing high-quality audio features into your website or game?
+                  </p>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-6 text-center">
+                  <img src="img/responsive_icon.png" class="img-fluid" style="width: 50%;" alt="Mobile">
+                </div>
+                <div class="col-6">
+                  <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
+                    Do you need assistance in enhancing the user experience of your website on smaller screens and mobile devices?
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/vrig_soft_edges.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 style="color:black;">VR Illusion Generator is a web app using web audio & three.js to recreate Phantom Words illusions. Experience hearing non-existent words or sounds.</h5>
-                <p>&nbsp;</p>
-                <a class="btn btn-lg btn-dark href="#about">Take me to the VRIG</a>
+            <div class="col-md-5 text-center">
+              <div class="row mb-4">
+                <div class="col-6 text-center">
+                  <img src="img/community_icon.png" class="img-fluid" style="width: 50%;" alt="Community">
+                </div>
+                <div class="col-6">
+                  <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
+                    We offer personalized advice and guidance on integrating blockchain technology into your website to unlock its full potential.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <img src="img/ue5_soft_edges.png" class="d-block w-100" alt="..."> 
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Audio Scavenger Hunt is a UE5 game featuring custom C++ code and Wwise audio implementation.</h5>
-                <p>&nbsp;</p>
-                <a class="btn btn-lg btn-light" href="#about">Take me to UE5 Game</a>
+              <div class="row mb-4">
+                <div class="col-6 text-center">
+                  <img src="img/headphone_icon.png" class="img-fluid" style="width: 50%;" alt="Leaf">
+                </div>
+                <div class="col-6">
+                  <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
+                    Using industry-leading software we can bring your soundscape visions to life with unparalleled quality and professionalism.
+                  </p>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-6 text-center">
+                  <img src="img/mobile_icon.png" class="img-fluid" style="width: 50%;" alt="Mobile">
+                </div>
+                <div class="col-6">
+                  <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
+                    With a proven track record of creating responsive websites and games, we can help you create a website that is accessible to all.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>       
-  </div>
-</section>
-
-        <!-- Services section-->
-        <section class="bg-light" id="services">
-          <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-              <div class="col-md-5 text-center">
-                <div class="row mb-4">
-                  <div class="col-6 text-center">
-                    <img src="img/blockchain_icon.png" class="img-fluid" style="width: 50%;" alt="Blockchain">
-                  </div>
-                  <div class="col-6">
-                    <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
-                      Need help connecting your website to a blockchain-based platform?
-                    </p>
-                  </div>
-                </div>
-                <div class="row mb-4">
-                  <div class="col-6 text-center">
-                    <img src="img/mic_icon.png" class="img-fluid" style="width: 50%;" alt="Audio">
-                  </div>
-                  <div class="col-6">
-                    <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
-                      Need help implementing high-quality audio features into your website or game?
-                    </p>
-                  </div>
-                </div>
-                <div class="row mb-4">
-                  <div class="col-6 text-center">
-                    <img src="img/responsive_icon.png" class="img-fluid" style="width: 50%;" alt="Mobile">
-                  </div>
-                  <div class="col-6">
-                    <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
-                      Do you need assistance in enhancing the user experience of your website on smaller screens and mobile devices?
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 text-center">
-                <div class="row mb-4">
-                  <div class="col-6 text-center">
-                    <img src="img/community_icon.png" class="img-fluid" style="width: 50%;" alt="Community">
-                  </div>
-                  <div class="col-6">
-                    <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
-                      We offer personalized advice and guidance on integrating blockchain technology into your website to unlock its full potential.
-                    </p>
-                  </div>
-                </div>
-                <div class="row mb-4">
-                  <div class="col-6 text-center">
-                    <img src="img/headphone_icon.png" class="img-fluid" style="width: 50%;" alt="Leaf">
-                  </div>
-                  <div class="col-6">
-                    <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
-                      Using industry-leading software we can bring your soundscape visions to life with unparalleled quality and professionalism.
-                    </p>
-                  </div>
-                </div>
-                <div class="row mb-4">
-                  <div class="col-6 text-center">
-                    <img src="img/mobile_icon.png" class="img-fluid" style="width: 50%;" alt="Mobile">
-                  </div>
-                  <div class="col-6">
-                    <p class="lead fw-normal text-white-50 mb-0" style="font-size: 16px;">
-                      With a proven track record of creating responsive websites and games, we can help you create a website that is accessible to all.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        <!-- Contact section-->
-        <section id="contact">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2>dan.rush02@gmail.com</h2>
-                        <p>&nbsp;</p>  
-                            <a href="https://www.facebook.com/danielrushsounddesign" target="_blank"><img src="img/facebookico.png" alt="Facebook" class="socialMedia"></a>
-                            <a href="https://www.instagram.com/dr_sound_design/" target="_blank"><img src="img/instagramico.png" alt="Instagram" class="socialMedia"></a>
-                            <a href="https://www.linkedin.com/in/daniel-rush-/" target="_blank"><img src="img/linkedinico.png" alt="LinkedIn" class="socialMedia"></a>
-                            <a href="https://soundcloud.com/danielrushsounddesign" target="_blank"><img src="img/soundcloudico.png" width="43" height="43"  alt="SoundCloud" class="socialMedia"></a>
-                            <a href="https://vimeo.com/user111763959" target="_blank"><img src="img/vimeoico.png" width="43" height="43" alt="Vimeo" class="socialMedia"></a>				
-                            <a href="https://github.com/drush92" target="_blank"><img src="img/githubico.png" alt="GitHub" class="socialMedia"></a>
-                            <a href="https://discordapp.com/users/e30ydj#6096" target="_blank"><img src="img/discordico.png" alt="Discord" class="socialMedia"></a>
-                          </p>	                    </div>
-                </div>
-            </div>
         </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Daniel Rush 2023</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        <!-- Core theme JS-->
-        <!--<script src="js/scripts.js"></script>-->
-    </body>
+            <!-- Contact section-->
+            <section id="contact" class=" bg-light">
+                <div class="container px-4">
+                    <div class="row gx-4 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2>dan.rush02@gmail.com</h2>
+                            <p>&nbsp;</p>  
+                                <a href="https://www.facebook.com/danielrushsounddesign" target="_blank"><img src="img/facebookico.png" alt="Facebook" class="socialMedia"></a>
+                                <a href="https://www.instagram.com/dr_sound_design/" target="_blank"><img src="img/instagramico.png" alt="Instagram" class="socialMedia"></a>
+                                <a href="https://www.linkedin.com/in/daniel-rush-/" target="_blank"><img src="img/linkedinico.png" alt="LinkedIn" class="socialMedia"></a>
+                                <a href="https://soundcloud.com/danielrushsounddesign" target="_blank"><img src="img/soundcloudico.png" width="43" height="43"  alt="SoundCloud" class="socialMedia"></a>
+                                <a href="https://vimeo.com/user111763959" target="_blank"><img src="img/vimeoico.png" width="43" height="43" alt="Vimeo" class="socialMedia"></a>				
+                                <a href="https://github.com/drush92" target="_blank"><img src="img/githubico.png" alt="GitHub" class="socialMedia"></a>
+                                <a href="https://discordapp.com/users/e30ydj#6096" target="_blank"><img src="img/discordico.png" alt="Discord" class="socialMedia"></a>
+                              </p>	                    </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer-->
+            <footer class="py-5 bg-dark">
+                <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Daniel Rush 2023</p></div>
+            </footer>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script type="module" src="js/taco.js"></script>
+  </body>
 </html>
