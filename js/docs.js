@@ -11,13 +11,13 @@ viewDocsButton.addEventListener('click', () => {
     videoList.style.display = "none";
     photoList.style.display = "none";
     musicList.style.display = "none";
-    docInput.value = '/docs\nall documents loaded successfully';
+    docInput.value = '/docs\nall documents loaded successfully\n';
   } else if (docInput.value === "/videos") {
     docList.style.display = "none";
     videoList.style.display = "block";
     photoList.style.display = "none";
     musicList.style.display = "none";
-    docInput.value = '/videos\nall videos loaded successfully';
+    docInput.value = '/videos\nall videos loaded successfully\n';
   } else if (docInput.value === "/photos") {
     docList.style.display = "none";
     videoList.style.display = "none";
@@ -28,9 +28,16 @@ viewDocsButton.addEventListener('click', () => {
     videoList.style.display = "none";
     photoList.style.display = "none";
     musicList.style.display = "block";
-    docInput.value = '/audio\nall audio loaded successfully';
+    docInput.value = '/audio\nall audio loaded successfully\n';
   } else {
     alert("Invalid input.");
   }
+  docInput.focus();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const docInput = document.querySelector('#doc-input');
+  docInput.value = ''; // Clear the textarea value
+});
+
 
