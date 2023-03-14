@@ -101,7 +101,20 @@ align-items: center;
   }
 }
 
-/* Hide the list items that don't match the search */
-.list-group-item.d-none {
+
+/* Hide the document list by default */
+#doc-list {
+  display: none;
+}
+
+#video-list {
+  display: none;
+}
+
+#photo-list {
+  display: none;
+}
+
+#music-list {
   display: none;
 }

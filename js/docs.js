@@ -1,36 +1,32 @@
-// Get the search input and docs list elements
-const searchInput = document.querySelector('#search-docs');
-const docsList = document.querySelector('#docs-list');
+const docList = document.querySelector('#doc-list');
+const videoList = document.querySelector('#video-list');
+const photoList = document.querySelector('#photo-list');
+const musicList = document.querySelector('#music-list');
+const docInput = document.querySelector('#doc-input');
+const viewDocsButton = document.querySelector('#button-view-docs');
 
-// Get the list items in the docs list
-const docs = Array.from(docsList.children);
-
-// Add an event listener to the search input to filter the docs list on input
-searchInput.addEventListener('input', () => {
-const searchTerm = searchInput.value.toLowerCase();
-
-// Filter the docs list based on the search term
-const filteredDocs = docs.filter(doc => {
-const docName = doc.textContent.toLowerCase();
-return docName.includes(searchTerm);
-});
-
-// Show only the filtered docs
-docs.forEach(doc => {
-if (!filteredDocs.includes(doc)) {
-doc.classList.add('d-none');
-} else {
-doc.classList.remove('d-none');
-}
-});
-});
-
-// Add an event listener to the "View All" button to show all docs
-const viewAllButton = document.querySelector('#view-all-docs');
-viewAllButton.addEventListener('click', () => {
-docs.forEach(doc => {
-doc.classList.remove('d-none');
-});
-
-searchInput.value = '';
+viewDocsButton.addEventListener('click', () => {
+  if (docInput.value === "/docs") {
+    docList.style.display = "block";
+    videoList.style.display = "none";
+    photoList.style.display = "none";
+    musicList.style.display = "none";
+  } else if (docInput.value === "/videos") {
+    docList.style.display = "none";
+    videoList.style.display = "block";
+    photoList.style.display = "none";
+    musicList.style.display = "none";
+  } else if (docInput.value === "/photos") {
+    docList.style.display = "none";
+    videoList.style.display = "none";
+    photoList.style.display = "block";
+    musicList.style.display = "none";
+  } else if (docInput.value === "/audio") {
+    docList.style.display = "none";
+    videoList.style.display = "none";
+    photoList.style.display = "none";
+    musicList.style.display = "block";
+  } else {
+    alert("Invalid input.");
+  }
 });
