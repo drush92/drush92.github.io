@@ -33,7 +33,7 @@ for (let i = 0; i < cityAreas.length; i++) {
   });
 
   cityAreas[i].addEventListener('mouseout', function() {
-    cityImage.src = 'img/city_500x370.png';
+    cityImage.src = '/img/city_380x290.png';
 
     // Hide info divs
     infoCity1.style.display = 'none';
