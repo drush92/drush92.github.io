@@ -1,34 +1,24 @@
 const cityImage = document.getElementById('city-image');
 const cityAreas = document.querySelectorAll('.city-areas');
-const infoCity1 = document.querySelector('.info-city1');
-const infoCity2 = document.querySelector('.info-city2');
-const infoCity3 = document.querySelector('.info-city3');
-const infoCity4 = document.querySelector('.info-city4');
+const infoCityIntro = document.querySelector('.info-city-intro');
+const infoCity = document.querySelectorAll('.info');
 
 for (let i = 0; i < cityAreas.length; i++) {
   cityAreas[i].addEventListener('mouseover', function() {
     cityImage.src = this.dataset.src;
 
-    if (this.classList.contains('info-city-1')) {
-      infoCity1.style.display = 'block';
-      infoCity2.style.display = 'none';
-      infoCity3.style.display = 'none';
-      infoCity4.style.display = 'none';
-    } else if (this.classList.contains('info-city-2')) {
-      infoCity1.style.display = 'none';
-      infoCity2.style.display = 'block';
-      infoCity3.style.display = 'none';
-      infoCity4.style.display = 'none';
-    } else if (this.classList.contains('info-city-3')) {
-      infoCity1.style.display = 'none';
-      infoCity2.style.display = 'none';
-      infoCity3.style.display = 'block';
-      infoCity4.style.display = 'none';
-    } else if (this.classList.contains('info-city-4')) {
-      infoCity1.style.display = 'none';
-      infoCity2.style.display = 'none';
-      infoCity3.style.display = 'none';
-      infoCity4.style.display = 'block';
+    // hide all info divs first
+    for (let j = 0; j < infoCity.length; j++) {
+      infoCity[j].style.display = 'none';
+    }
+
+    // show the corresponding info div based on the class name of the area
+    const targetInfoDiv = document.getElementById(`info-city-${this.dataset.info}`);
+    if (targetInfoDiv) {
+      infoCityIntro.style.display = 'none';
+      targetInfoDiv.style.display = 'block';
+    } else {
+      infoCityIntro.style.display = 'block';
     }
   });
 
@@ -36,9 +26,9 @@ for (let i = 0; i < cityAreas.length; i++) {
     cityImage.src = '/img/city_380x290.png';
 
     // Hide info divs
-    infoCity1.style.display = 'none';
-    infoCity2.style.display = 'none';
-    infoCity3.style.display = 'none';
-    infoCity4.style.display = 'none';
+    infoCityIntro.style.display = 'block';
+    for (let j = 0; j < infoCity.length; j++) {
+      infoCity[j].style.display = 'none';
+    }
   });
 }
