@@ -100,3 +100,8 @@ align-items: center;
     font-size: 26px;
   }
 }
+
+/* Hide the list items that don't match the search */
+.list-group-item.d-none {
+  display: none;
+}
