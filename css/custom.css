@@ -118,3 +118,23 @@ align-items: center;
 #music-list {
   display: none;
 }
+
+.form-control {
+  border: 1px solid #6c757d;
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #6c757d;
+  background-color: black;
+  color: white;
+}

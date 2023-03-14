@@ -11,6 +11,7 @@ viewDocsButton.addEventListener('click', () => {
     videoList.style.display = "none";
     photoList.style.display = "none";
     musicList.style.display = "none";
+    docInput.value = '/docs\nall documents loaded successfully';
   } else if (docInput.value === "/videos") {
     docList.style.display = "none";
     videoList.style.display = "block";
@@ -30,3 +31,4 @@ viewDocsButton.addEventListener('click', () => {
     alert("Invalid input.");
   }
 });
+
