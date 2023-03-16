@@ -195,3 +195,7 @@ align-items: center;
   }
 }
 
+.mockup-dropshadow {
+  -webkit-filter: drop-shadow(-15px 15px 25px #222);
+filter: drop-shadow(-15px 15px 25px #222);
+}
