@@ -155,3 +155,43 @@ align-items: center;
   font-family: 'Courier New', Courier, monospace;
   border: 2px solid #0ea81b;
 }
+
+.speech-bubble {
+
+  display: inline-block;
+  background-color:#23272b;
+  color: black;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0;
+  animation: fade-in 0.5s ease forwards;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 20px 20px 0 0;
+  border-color: #23272b transparent transparent transparent;
+  bottom: -20px;
+  left: 20%;
+}
+
+.floating-text {
+  animation: fade-in 0.5s ease forwards;
+  opacity: 0;
+}
+
+/* Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
