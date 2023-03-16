@@ -2,6 +2,7 @@ const cityImage = document.getElementById('city-image');
 const cityAreas = document.querySelectorAll('.city-areas');
 const infoCityIntro = document.querySelector('.info-city-intro');
 const infoCity = document.querySelectorAll('.info');
+const seeDocsBtn = document.querySelector('.see-docs-btn');
 
 for (let i = 0; i < cityAreas.length; i++) {
   cityAreas[i].addEventListener('mouseover', function() {
@@ -22,6 +23,7 @@ for (let i = 0; i < cityAreas.length; i++) {
       infoCityIntro.style.display = 'block';
     }
   });
+
 
   cityAreas[i].addEventListener('mouseout', function() {
     cityImage.src = '/img/city_380x290.png';

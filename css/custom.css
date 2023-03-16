@@ -10,6 +10,17 @@ body {
   .navbar-dark .navbar-brand {
     color: #f8f9fa;
   }
+
+  .hover-navbar {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .hover-navbar:hover {
+    opacity: 1;
+    visibility: visible;
+  }
   
   .bg-primary {
     background-color: #6c757d!important;
@@ -73,10 +84,12 @@ align-items: center;
   .info {
     font-size: 25px;
      display: none;
+     color: #FFF;
 }
 
 .info-col {
     font-size: 16px;
+    color: #FFF;
 }
 
 .iconHolder {
@@ -233,11 +246,17 @@ filter: drop-shadow(-5px 5px 15px #525252);
     font-size: 20px;
     width: 50vh;
   }
+  .resize-text-small {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 993px) {
   .resize-text {
     font-size: 26px;
+  }
+  .resize-text-small {
+    font-size: 20px;
   }
 }
 
