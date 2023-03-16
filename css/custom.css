@@ -285,7 +285,7 @@ filter: drop-shadow(-5px 5px 15px #525252);
 }
 
 .headshot-switch {
-  background-image: url("headshot_pixel.png");
+  background-image: url("http://agd933.poseidon.salford.ac.uk/headshot_pixel.png");
   height: 310px;
   width: 289px;
   margin-left: auto;
@@ -294,5 +294,5 @@ filter: drop-shadow(-5px 5px 15px #525252);
 }
 
 .headshot-switch:hover {
-  background-image: url("headshot_photo.png");
+  background-image: url("http://agd933.poseidon.salford.ac.uk/headshot_photo.png");
 }
