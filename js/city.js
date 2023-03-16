@@ -17,6 +17,7 @@ for (let i = 0; i < cityAreas.length; i++) {
     if (targetInfoDiv) {
       infoCityIntro.style.display = 'none';
       targetInfoDiv.style.display = 'block';
+      seeDocsBtn.style.display = 'none';
     } else {
       infoCityIntro.style.display = 'block';
     }
